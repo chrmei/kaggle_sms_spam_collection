@@ -1,0 +1,1158 @@
+{
+  "logistic_regression": {
+    "367b432f63ee": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "none",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "none",
+      "accuracy": 0.9802690582959641,
+      "spam_precision": 0.9261744966442953,
+      "spam_recall": 0.9261744966442953,
+      "spam_f1": 0.9261744966442953,
+      "weighted_f1": 0.9802690582959641,
+      "pr_auc": 0.9749060623460442,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            955,
+            11
+          ],
+          [
+            11,
+            138
+          ]
+        ],
+        "tn": 955,
+        "fp": 11,
+        "fn": 11,
+        "tp": 138
+      },
+      "config_hash": "367b432f63ee",
+      "recorded_at_utc": "2026-04-29T12:04:10.751717+00:00"
+    },
+    "d73e2e976bb2": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "none",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "none",
+      "accuracy": 0.9856502242152466,
+      "spam_precision": 0.965034965034965,
+      "spam_recall": 0.9261744966442953,
+      "spam_f1": 0.9452054794520548,
+      "weighted_f1": 0.9855250082871873,
+      "pr_auc": 0.9694688948542237,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            961,
+            5
+          ],
+          [
+            11,
+            138
+          ]
+        ],
+        "tn": 961,
+        "fp": 5,
+        "fn": 11,
+        "tp": 138
+      },
+      "config_hash": "d73e2e976bb2",
+      "recorded_at_utc": "2026-04-29T12:04:28.056365+00:00"
+    },
+    "64e51eb20fb0": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "none",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "none",
+      "accuracy": 0.9856502242152466,
+      "spam_precision": 0.965034965034965,
+      "spam_recall": 0.9261744966442953,
+      "spam_f1": 0.9452054794520548,
+      "weighted_f1": 0.9855250082871873,
+      "pr_auc": 0.9694154316535698,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            961,
+            5
+          ],
+          [
+            11,
+            138
+          ]
+        ],
+        "tn": 961,
+        "fp": 5,
+        "fn": 11,
+        "tp": 138
+      },
+      "config_hash": "64e51eb20fb0",
+      "recorded_at_utc": "2026-04-29T12:04:47.372809+00:00"
+    },
+    "4c686680fbe3": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemmatize",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "lemmatize",
+      "accuracy": 0.9829596412556054,
+      "spam_precision": 0.922077922077922,
+      "spam_recall": 0.9530201342281879,
+      "spam_f1": 0.9372937293729373,
+      "weighted_f1": 0.9830781309076102,
+      "pr_auc": 0.9776541708244506,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            954,
+            12
+          ],
+          [
+            7,
+            142
+          ]
+        ],
+        "tn": 954,
+        "fp": 12,
+        "fn": 7,
+        "tp": 142
+      },
+      "config_hash": "4c686680fbe3",
+      "recorded_at_utc": "2026-04-29T12:05:04.560521+00:00"
+    },
+    "e4930cce3460": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemmatize",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "lemmatize",
+      "accuracy": 0.9865470852017937,
+      "spam_precision": 0.958904109589041,
+      "spam_recall": 0.9395973154362416,
+      "spam_f1": 0.9491525423728814,
+      "weighted_f1": 0.9864891091664,
+      "pr_auc": 0.9702174935977383,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            960,
+            6
+          ],
+          [
+            9,
+            140
+          ]
+        ],
+        "tn": 960,
+        "fp": 6,
+        "fn": 9,
+        "tp": 140
+      },
+      "config_hash": "e4930cce3460",
+      "recorded_at_utc": "2026-04-29T12:05:17.256626+00:00"
+    },
+    "b007683d3969": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemmatize",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "lemmatize",
+      "accuracy": 0.9865470852017937,
+      "spam_precision": 0.958904109589041,
+      "spam_recall": 0.9395973154362416,
+      "spam_f1": 0.9491525423728814,
+      "weighted_f1": 0.9864891091664,
+      "pr_auc": 0.9702056695518434,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            960,
+            6
+          ],
+          [
+            9,
+            140
+          ]
+        ],
+        "tn": 960,
+        "fp": 6,
+        "fn": 9,
+        "tp": 140
+      },
+      "config_hash": "b007683d3969",
+      "recorded_at_utc": "2026-04-29T12:05:35.124913+00:00"
+    },
+    "72a62cdb41ad": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "stem",
+      "accuracy": 0.9838565022421525,
+      "spam_precision": 0.9337748344370861,
+      "spam_recall": 0.9463087248322147,
+      "spam_f1": 0.94,
+      "weighted_f1": 0.9839019493947351,
+      "pr_auc": 0.977106109586839,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            956,
+            10
+          ],
+          [
+            8,
+            141
+          ]
+        ],
+        "tn": 956,
+        "fp": 10,
+        "fn": 8,
+        "tp": 141
+      },
+      "config_hash": "72a62cdb41ad",
+      "recorded_at_utc": "2026-04-29T12:05:52.131396+00:00"
+    },
+    "34f86986a629": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "stem",
+      "accuracy": 0.9865470852017937,
+      "spam_precision": 0.958904109589041,
+      "spam_recall": 0.9395973154362416,
+      "spam_f1": 0.9491525423728814,
+      "weighted_f1": 0.9864891091664,
+      "pr_auc": 0.974936460515511,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            960,
+            6
+          ],
+          [
+            9,
+            140
+          ]
+        ],
+        "tn": 960,
+        "fp": 6,
+        "fn": 9,
+        "tp": 140
+      },
+      "config_hash": "34f86986a629",
+      "recorded_at_utc": "2026-04-29T12:06:05.438521+00:00"
+    },
+    "a2e8dfa360f7": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "stem",
+      "accuracy": 0.9865470852017937,
+      "spam_precision": 0.958904109589041,
+      "spam_recall": 0.9395973154362416,
+      "spam_f1": 0.9491525423728814,
+      "weighted_f1": 0.9864891091664,
+      "pr_auc": 0.9750284005665919,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            960,
+            6
+          ],
+          [
+            9,
+            140
+          ]
+        ],
+        "tn": 960,
+        "fp": 6,
+        "fn": 9,
+        "tp": 140
+      },
+      "config_hash": "a2e8dfa360f7",
+      "recorded_at_utc": "2026-04-29T12:06:22.581408+00:00"
+    },
+    "1e743e62e07d": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemma_then_stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "lemma_then_stem",
+      "accuracy": 0.9838565022421525,
+      "spam_precision": 0.9337748344370861,
+      "spam_recall": 0.9463087248322147,
+      "spam_f1": 0.94,
+      "weighted_f1": 0.9839019493947351,
+      "pr_auc": 0.9772652809096414,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            956,
+            10
+          ],
+          [
+            8,
+            141
+          ]
+        ],
+        "tn": 956,
+        "fp": 10,
+        "fn": 8,
+        "tp": 141
+      },
+      "config_hash": "1e743e62e07d",
+      "recorded_at_utc": "2026-04-29T12:06:36.158665+00:00"
+    },
+    "8fdb2868b530": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemma_then_stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "lemma_then_stem",
+      "accuracy": 0.9874439461883409,
+      "spam_precision": 0.9655172413793104,
+      "spam_recall": 0.9395973154362416,
+      "spam_f1": 0.9523809523809523,
+      "weighted_f1": 0.9873715019862594,
+      "pr_auc": 0.9745460266829985,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            961,
+            5
+          ],
+          [
+            9,
+            140
+          ]
+        ],
+        "tn": 961,
+        "fp": 5,
+        "fn": 9,
+        "tp": 140
+      },
+      "config_hash": "8fdb2868b530",
+      "recorded_at_utc": "2026-04-29T12:06:47.368779+00:00"
+    },
+    "b242669cde5d": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemma_then_stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "logistic_regression",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "logistic_regression",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "lemma_then_stem",
+      "accuracy": 0.9874439461883409,
+      "spam_precision": 0.9655172413793104,
+      "spam_recall": 0.9395973154362416,
+      "spam_f1": 0.9523809523809523,
+      "weighted_f1": 0.9873715019862594,
+      "pr_auc": 0.9747170281774425,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            961,
+            5
+          ],
+          [
+            9,
+            140
+          ]
+        ],
+        "tn": 961,
+        "fp": 5,
+        "fn": 9,
+        "tp": 140
+      },
+      "config_hash": "b242669cde5d",
+      "recorded_at_utc": "2026-04-29T12:07:01.605507+00:00"
+    }
+  },
+  "xgboost": {
+    "cb2723923c98": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "none",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "none",
+      "accuracy": 0.9883408071748879,
+      "spam_precision": 1.0,
+      "spam_recall": 0.912751677852349,
+      "spam_f1": 0.9543859649122807,
+      "weighted_f1": 0.9881138596430554,
+      "pr_auc": 0.981247141029468,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            13,
+            136
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 13,
+        "tp": 136
+      },
+      "config_hash": "cb2723923c98",
+      "recorded_at_utc": "2026-04-29T12:04:22.379040+00:00"
+    },
+    "20a73de3e62f": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "none",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "none",
+      "accuracy": 0.9874439461883409,
+      "spam_precision": 1.0,
+      "spam_recall": 0.9060402684563759,
+      "spam_f1": 0.9507042253521126,
+      "weighted_f1": 0.9871796316499506,
+      "pr_auc": 0.9749092215344975,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            14,
+            135
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 14,
+        "tp": 135
+      },
+      "config_hash": "20a73de3e62f",
+      "recorded_at_utc": "2026-04-29T12:04:36.552399+00:00"
+    },
+    "317b44b177e9": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "none",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "none",
+      "accuracy": 0.9874439461883409,
+      "spam_precision": 1.0,
+      "spam_recall": 0.9060402684563759,
+      "spam_f1": 0.9507042253521126,
+      "weighted_f1": 0.9871796316499506,
+      "pr_auc": 0.9745410924016801,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            14,
+            135
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 14,
+        "tp": 135
+      },
+      "config_hash": "317b44b177e9",
+      "recorded_at_utc": "2026-04-29T12:04:59.896542+00:00"
+    },
+    "447a63c9e085": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemmatize",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "lemmatize",
+      "accuracy": 0.9883408071748879,
+      "spam_precision": 1.0,
+      "spam_recall": 0.912751677852349,
+      "spam_f1": 0.9543859649122807,
+      "weighted_f1": 0.9881138596430554,
+      "pr_auc": 0.9838616952020194,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            13,
+            136
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 13,
+        "tp": 136
+      },
+      "config_hash": "447a63c9e085",
+      "recorded_at_utc": "2026-04-29T12:05:12.205642+00:00"
+    },
+    "bb6d154c7137": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemmatize",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "lemmatize",
+      "accuracy": 0.9856502242152466,
+      "spam_precision": 0.9925925925925926,
+      "spam_recall": 0.8993288590604027,
+      "spam_f1": 0.9436619718309859,
+      "weighted_f1": 0.9853481504570866,
+      "pr_auc": 0.9786569151610023,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            965,
+            1
+          ],
+          [
+            15,
+            134
+          ]
+        ],
+        "tn": 965,
+        "fp": 1,
+        "fn": 15,
+        "tp": 134
+      },
+      "config_hash": "bb6d154c7137",
+      "recorded_at_utc": "2026-04-29T12:05:26.496071+00:00"
+    },
+    "7d6a0c350630": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemmatize",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "lemmatize",
+      "accuracy": 0.9856502242152466,
+      "spam_precision": 0.9925925925925926,
+      "spam_recall": 0.8993288590604027,
+      "spam_f1": 0.9436619718309859,
+      "weighted_f1": 0.9853481504570866,
+      "pr_auc": 0.9798697937712042,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            965,
+            1
+          ],
+          [
+            15,
+            134
+          ]
+        ],
+        "tn": 965,
+        "fp": 1,
+        "fn": 15,
+        "tp": 134
+      },
+      "config_hash": "7d6a0c350630",
+      "recorded_at_utc": "2026-04-29T12:05:47.433405+00:00"
+    },
+    "5f94a0ffa610": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "stem",
+      "accuracy": 0.9901345291479821,
+      "spam_precision": 1.0,
+      "spam_recall": 0.9261744966442953,
+      "spam_f1": 0.9616724738675958,
+      "weighted_f1": 0.9899733955359984,
+      "pr_auc": 0.9826647505392859,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            11,
+            138
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 11,
+        "tp": 138
+      },
+      "config_hash": "5f94a0ffa610",
+      "recorded_at_utc": "2026-04-29T12:06:00.679203+00:00"
+    },
+    "5fef19274b5f": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "stem",
+      "accuracy": 0.9874439461883409,
+      "spam_precision": 1.0,
+      "spam_recall": 0.9060402684563759,
+      "spam_f1": 0.9507042253521126,
+      "weighted_f1": 0.9871796316499506,
+      "pr_auc": 0.9781148951235835,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            14,
+            135
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 14,
+        "tp": 135
+      },
+      "config_hash": "5fef19274b5f",
+      "recorded_at_utc": "2026-04-29T12:06:13.763899+00:00"
+    },
+    "57bcc3a232f1": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "stem",
+      "accuracy": 0.9865470852017937,
+      "spam_precision": 1.0,
+      "spam_recall": 0.8993288590604027,
+      "spam_f1": 0.9469964664310954,
+      "weighted_f1": 0.9862423808969348,
+      "pr_auc": 0.9780596322103551,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            15,
+            134
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 15,
+        "tp": 134
+      },
+      "config_hash": "57bcc3a232f1",
+      "recorded_at_utc": "2026-04-29T12:06:32.053870+00:00"
+    },
+    "77898d64937b": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemma_then_stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_word_char",
+      "preprocessing_mode": "lemma_then_stem",
+      "accuracy": 0.9901345291479821,
+      "spam_precision": 1.0,
+      "spam_recall": 0.9261744966442953,
+      "spam_f1": 0.9616724738675958,
+      "weighted_f1": 0.9899733955359984,
+      "pr_auc": 0.9838632165555804,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            11,
+            138
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 11,
+        "tp": 138
+      },
+      "config_hash": "77898d64937b",
+      "recorded_at_utc": "2026-04-29T12:06:42.654647+00:00"
+    },
+    "a706b8b00f4e": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemma_then_stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "count_word_char",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "count_word_char",
+      "preprocessing_mode": "lemma_then_stem",
+      "accuracy": 0.9874439461883409,
+      "spam_precision": 1.0,
+      "spam_recall": 0.9060402684563759,
+      "spam_f1": 0.9507042253521126,
+      "weighted_f1": 0.9871796316499506,
+      "pr_auc": 0.9791204760547271,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            14,
+            135
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 14,
+        "tp": 135
+      },
+      "config_hash": "a706b8b00f4e",
+      "recorded_at_utc": "2026-04-29T12:06:53.925590+00:00"
+    },
+    "f908145d595a": {
+      "config": {
+        "data_path": "data/raw/spam.csv",
+        "output_dir": "artifacts/grid1",
+        "random_state": 42,
+        "test_size": 0.2,
+        "preprocessing_mode": "lemma_then_stem",
+        "use_placeholders": true,
+        "vectorizer_mode": "tfidf_plus_count",
+        "svd_components": 300,
+        "model_name": "xgboost",
+        "threshold": 0.5,
+        "min_precision_for_recommendation": 0.95,
+        "model_params": null
+      },
+      "model_name": "xgboost",
+      "vectorizer_mode": "tfidf_plus_count",
+      "preprocessing_mode": "lemma_then_stem",
+      "accuracy": 0.9883408071748879,
+      "spam_precision": 1.0,
+      "spam_recall": 0.912751677852349,
+      "spam_f1": 0.9543859649122807,
+      "weighted_f1": 0.9881138596430554,
+      "pr_auc": 0.9783290588699016,
+      "threshold": 0.5,
+      "confusion_matrix_threshold": {
+        "labels": [
+          "ham",
+          "spam"
+        ],
+        "matrix": [
+          [
+            966,
+            0
+          ],
+          [
+            13,
+            136
+          ]
+        ],
+        "tn": 966,
+        "fp": 0,
+        "fn": 13,
+        "tp": 136
+      },
+      "config_hash": "f908145d595a",
+      "recorded_at_utc": "2026-04-29T12:07:11.295721+00:00"
+    }
+  }
+}

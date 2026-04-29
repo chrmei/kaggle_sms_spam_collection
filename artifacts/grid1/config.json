@@ -1,0 +1,14 @@
+{
+  "data_path": "data/raw/spam.csv",
+  "output_dir": "artifacts/grid1",
+  "random_state": 42,
+  "test_size": 0.2,
+  "preprocessing_mode": "lemma_then_stem",
+  "use_placeholders": true,
+  "vectorizer_mode": "tfidf_plus_count",
+  "svd_components": 300,
+  "model_name": "xgboost",
+  "threshold": 0.5,
+  "min_precision_for_recommendation": 0.95,
+  "model_params": null
+}

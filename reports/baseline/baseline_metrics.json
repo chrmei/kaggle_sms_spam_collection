@@ -1,0 +1,24 @@
+{
+  "engineered_logreg": {
+    "accuracy": 0.9838565022421525,
+    "spam_recall": 0.9328859060402684,
+    "spam_f1": 0.9391891891891891,
+    "weighted_f1": 0.9838103106050761
+  },
+  "model_comparison": [
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.9838565022421525,
+      "spam_recall": 0.9328859060402684,
+      "spam_f1": 0.9391891891891891,
+      "weighted_f1": 0.9838103106050761
+    },
+    {
+      "model": "xgboost",
+      "accuracy": 0.9883408071748879,
+      "spam_recall": 0.9194630872483222,
+      "spam_f1": 0.9547038327526133,
+      "weighted_f1": 0.9881503765425436
+    }
+  ]
+}
