@@ -5,6 +5,7 @@ Binary SMS classification project on the Kaggle SMS Spam Collection dataset, com
 ## Dataset
 
 - Source: [Kaggle - SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
+- Direct Kaggle URL: <https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset>
 - Samples: 5,574 English SMS messages
 - Target labels: `ham`, `spam`
 
@@ -98,10 +99,23 @@ Typical outputs written by training/evaluation workflows:
 
 Key outcomes from `artifacts/grid1/metrics.json`:
 
-- Best `xgboost` run: accuracy `0.9901`, spam precision `1.0000`, spam recall `0.9262`, spam F1 `0.9617`.
-- Best `logistic_regression` run: accuracy `0.9874`, spam precision `0.9655`, spam recall `0.9396`, spam F1 `0.9524`.
-- Across the grid, `xgboost` is consistently stronger on precision and overall F1/accuracy, while `logistic_regression` tends to recover slightly more spam (higher recall in its top runs).
+Winning runs from `artifacts/grid1/metrics.json`:
+
+| Model | Preprocessing | Vectorizer | Accuracy | Spam Precision | Spam Recall | Spam F1 |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| xgboost | stem | tfidf_word_char | 0.9901 | 1.0000 | 0.9262 | 0.9617 |
+| logistic_regression | lemma_then_stem | count_word_char | 0.9874 | 0.9655 | 0.9396 | 0.9524 |
+
+Confusion matrix values at threshold `0.5` (format: TN, FP, FN, TP):
+
+| Model | TN | FP | FN | TP |
+| --- | ---: | ---: | ---: | ---: |
+| xgboost | 966 | 0 | 11 | 138 |
+| logistic_regression | 961 | 5 | 9 | 140 |
 
 ## Conclusion
+
+
+Across the grid, `xgboost` is consistently stronger on precision and overall F1/accuracy, while `logistic_regression` tends to recover slightly more spam (higher recall in its top runs).
 
 `xgboost` is the strongest overall choice in this project because it delivers the highest aggregate classification performance and near-zero false positives. `logistic_regression` remains competitive and can be preferred when marginally higher spam recall is more important than maximum precision.
