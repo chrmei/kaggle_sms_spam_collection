@@ -95,11 +95,12 @@ Typical outputs written by training/evaluation workflows:
 
 `grid1` runs compare both model families over the same preprocessing and vectorizer grid.
 
-![Grid1 model comparison boxplots](reports/grid1/model_boxplots.png)
-
 Key outcomes from `artifacts/grid1/metrics.json`:
 
-Winning runs from `artifacts/grid1/metrics.json`:
+![Grid1 model comparison boxplots](reports/grid1/model_boxplots.png)
+
+Winning runs from `artifacts/grid1/metrics.json` :
+The "winning" model was chosen by comparing all `grid1` runs and selecting the configuration with the strongest overall balance of spam F1, accuracy, and precision (minimizing false positives).
 
 | Model | Preprocessing | Vectorizer | Accuracy | Spam Precision | Spam Recall | Spam F1 |
 | --- | --- | --- | ---: | ---: | ---: | ---: |

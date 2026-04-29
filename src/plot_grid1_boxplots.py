@@ -40,24 +40,32 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def load_model_scores(metrics_path: Path) -> dict[str, dict[str, list[float]]]:
+def load_model_scores(
+    metrics_path: Path,
+) -> tuple[dict[str, dict[str, list[float]]], dict[str, int]]:
     payload = json.loads(metrics_path.read_text(encoding="utf-8"))
     scores = {
         model: {metric_key: [] for metric_key, _ in METRICS}
         for model in MODEL_KEYS
     }
+    combination_counts = {model: 0 for model in MODEL_KEYS}
 
     for model in MODEL_KEYS:
         entries = payload.get(model, {})
+        combination_counts[model] = len(entries)
         for _, run_metrics in entries.items():
             for metric_key, _ in METRICS:
                 if metric_key in run_metrics:
                     scores[model][metric_key].append(run_metrics[metric_key])
 
-    return scores
+    return scores, combination_counts
 
 
-def plot_boxplots(scores: dict[str, dict[str, list[float]]], output_path: Path) -> None:
+def plot_boxplots(
+    scores: dict[str, dict[str, list[float]]],
+    combination_counts: dict[str, int],
+    output_path: Path,
+) -> None:
     fig, axes = plt.subplots(2, 3, figsize=(14, 8), constrained_layout=True)
     axes = axes.flatten()
 
@@ -88,17 +96,31 @@ def plot_boxplots(scores: dict[str, dict[str, list[float]]], output_path: Path) 
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fig.suptitle("Grid1 Metrics: XGBoost vs Logistic Regression", fontsize=14)
-    fig.savefig(output_path, dpi=180)
+    combinations_text = "Combinations per model: " + " | ".join(
+        f"{MODEL_LABELS[model]}: {combination_counts[model]}" for model in model_order
+    )
+    footer_fontsize = 10
+    text_height_in_figure = (footer_fontsize / 72) / fig.get_figheight()
+    footer_y = 0.01 - (2 * text_height_in_figure)
+    fig.text(
+        0.5,
+        footer_y,
+        combinations_text,
+        ha="center",
+        va="bottom",
+        fontsize=footer_fontsize,
+    )
+    fig.savefig(output_path, dpi=180, bbox_inches="tight")
     plt.close(fig)
 
 
 def main() -> None:
     args = parse_args()
-    scores = load_model_scores(args.metrics_path)
-    plot_boxplots(scores, args.output)
+    scores, combination_counts = load_model_scores(args.metrics_path)
+    plot_boxplots(scores, combination_counts, args.output)
     print(f"Saved visualization to: {args.output}")
     for model in MODEL_KEYS:
-        n_runs = len(scores[model]["accuracy"])
+        n_runs = combination_counts[model]
         print(f"{MODEL_LABELS[model]} runs: {n_runs}")
 
 
