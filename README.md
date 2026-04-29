@@ -107,12 +107,20 @@ The "winning" model was chosen by comparing all `grid1` runs and selecting the c
 | xgboost | stem | tfidf_word_char | 0.9901 | 1.0000 | 0.9262 | 0.9617 |
 | logistic_regression | lemma_then_stem | count_word_char | 0.9874 | 0.9655 | 0.9396 | 0.9524 |
 
-Confusion matrix values at threshold `0.5` (format: TN, FP, FN, TP):
+Confusion matrix values at threshold `0.5` (format: TN, FP, FN, TP) for the test dataset:
 
 | Model | TN | FP | FN | TP |
 | --- | ---: | ---: | ---: | ---: |
 | xgboost | 966 | 0 | 11 | 138 |
 | logistic_regression | 961 | 5 | 9 | 140 |
+
+With `threshold = 0.5`:
+
+- `P(spam) >= 0.5` -> predict `spam`
+- `P(spam) < 0.5` -> predict `ham`
+
+Note: If your main objective is "avoid false positives at all cost," you will often want a threshold above `0.5`; if "catch nearly all spam," often below `0.5`.
+
 
 ## Conclusion
 
