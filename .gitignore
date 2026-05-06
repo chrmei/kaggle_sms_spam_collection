@@ -6,3 +6,4 @@ artifacts/debug*
 artifacts/latest*
 artifacts/make_override*
 *.joblib
+.cursor/*
